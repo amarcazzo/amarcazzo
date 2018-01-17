@@ -5,66 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://d30y9cdsu7xlg0.cloudfront.net/png/962492-200.png">
+    <meta name="description" content="My personal website">
+    <meta name="author" content="Ayrton Marcazzo">
+    <link rel="icon" href="https://d30y9cdsu7xlg0.cloudfront.net/png/575613-200.png">
 
     <title>Ayrton Marcazzo</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="https://v4-alpha.getbootstrap.com/examples/cover/cover.css" rel="stylesheet">
-    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether.min.css">
+    <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 
   </head>
-
   <body>
+    <button type="button" id="toTop" class="btn btn-primary fixed-bottom" data-toggle="tooltip" data-placemente="top" title="Back to top!">
+      <i class="fa fa-arrow-up" style="font-size:20px;color:white"></i>
+    </button>
 
-    <div class="site-wrapper">
+    <!-- Cover -->
+    <div id="cover" class="cover content">
+        <span class="title">< Ayrton Marcazzo /></span>
 
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Ayrton Marcazzo</h1>
-            <p class="lead">Sitio en construccion // Site under construction</p>
-          </div>
-
-          <div class="mastfoot">
-            <p>Contacto // Contact</p>
-            <div class="inner">
-              <a href="mailto:ayrtonmarcazzo@gmail.com">
-                <i class="fa fa-envelope-o" style="font-size:40px;color:white"></i>
-              </a>
-              <a href="https://www.github.com/amarcazzo/">
-                <i class="fa fa-github" style="font-size:40px;color:grey"></i>
-              </a>
-              <a href="https://www.instagram.com/ayrtoneme/">
-                <i class="fa fa-instagram" style="font-size:40px;color:red"></i>
-              </a>
-              <a href="https://www.twitter.com/ayrtoneme/">
-                <i class="fa fa-twitter" style="font-size:40px;color:lightblue"></i>
-              </a>
-            </div>
-          </div>
-
+        <div class="">
+          <a href="mailto:ayrtonmarcazzo@gmail.com" target="_blank">
+            <i class="fa fa-envelope-o" style="font-size:40px;color:white"></i>
+          </a>
+          <a href="https://www.github.com/amarcazzo/" target="_blank">
+            <i class="fa fa-github" style="font-size:40px;color:grey"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/amarcazzo/" target="_blank">
+            <i class="fa fa-linkedin" style="font-size:40px;color:lightblue"></i>
+          </a>
+          <a href="https://www.instagram.com/ayrtoneme/" target="_blank">
+            <i class="fa fa-instagram" style="font-size:40px;color:red"></i>
+          </a>
+          <a href="https://www.twitter.com/ayrtoneme/" target="_blank">
+            <i class="fa fa-twitter icon" style="font-size:40px;color:lightblue"></i>
+          </a>
         </div>
 
-      </div>
-
+        <div class="navbar">
+          <nav class="navbar">
+            <ul class="nav nav-pills">
+              <li class="nav-item active">
+                <a class="nav-link js-scrollTo" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scrollTo" href="#exp">My skills</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
     </div>
 
+    <!-- About -->
+    <div id="about" class="about content">
+      <h1 class="title">About me</h1>
+      <div class="about-content">
+        <img src="img/profile-pic.jpg" alt="Foto de perfil">
+        <div>
+          <h3 class="card-subtitle mb-2 text-muted">Tengo 22 años y soy desarrollador web.</h3>
+          <p class="about-p">Actualmente estoy terminando la carrera de <strong>Técnico Superior en Programación</strong> en la <i>Universidad Tecnologica Nacional</i>. Comence programando en <i><strong>ASP.NET</strong></i>, framework de Microsoft, pero mi interés está puesto en el desarrollo front-end, aprendiendo frameworks como <i><strong>Angular</strong></i> o librerias como <i><strong>React</strong></i>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills  -->
+    <div id="exp" class="experience content">
+      <h1 class="title">My skills</h1>
+      <div id="skills-content" class="row">
+      </div>
+    </div>
+
+    <footer>
+      <p class="title">© Ayrton Marcazzo 2018</p>
+    </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/app.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-
+    <script src="http://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
